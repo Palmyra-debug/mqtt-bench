@@ -13,6 +13,7 @@ dist/
 # Тестовые файлы
 *.test
 *.out
+*.json
 
 # Файлы IDE
 .idea/
