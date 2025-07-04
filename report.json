@@ -1,0 +1,10 @@
+{
+  "mode": "random",
+  "total_signals": 100,
+  "success_count": 100,
+  "error_count": 0,
+  "duration_sec": 23.2962923,
+  "start_time": "2025-07-04T16:09:44.8318422+03:00",
+  "end_time": "2025-07-04T16:10:08.1281345+03:00",
+  "avg_rate_msgs_per_sec": 4.29252855828908
+}
