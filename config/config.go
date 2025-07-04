@@ -11,6 +11,8 @@ import (
 type Config struct {
 	// Основные параметры
 	BrokerURL      string
+	MQTTUsername   string
+	MQTTPassword   string
 	ClientIDPrefix string
 	TopicPattern   string
 	QoS            int
@@ -69,6 +71,8 @@ func LoadConfig() *Config {
 		// Основные параметры
 		BrokerURL:      getEnv("BROKER_URL", "tcp://localhost:1883"),
 		ClientIDPrefix: getEnv("CLIENT_ID_PREFIX", "benchClient"),
+		MQTTUsername:   getEnv("MQTT_USERNAME", ""),
+		MQTTPassword:   getEnv("MQTT_PASSWORD", ""),
 		TopicPattern:   getEnv("TOPIC_PATTERN", "/devices/{device_id}/controls/{control_id}"),
 		QoS:            getInt("QoS", 0),
 		Mode:           getEnv("MODE", "constant"),

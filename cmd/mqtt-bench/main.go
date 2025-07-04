@@ -35,6 +35,14 @@ func main() {
 		AddBroker(cfg.BrokerURL).
 		SetClientID(cfg.ClientIDPrefix)
 
+	// Аутентификация если указаны учетные данные
+	if cfg.MQTTUsername != "" {
+		opts.SetUsername(cfg.MQTTUsername)
+		if cfg.MQTTPassword != "" {
+			opts.SetPassword(cfg.MQTTPassword)
+		}
+	}
+
 	// Инициализация клиента MQTT
 	client := mqtt.NewClient(opts)
 
