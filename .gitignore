@@ -1,0 +1,38 @@
+# Бинарные файлы
+*.exe
+*.dll
+*.so
+*.dylib
+bin/
+dist/
+
+# Кэш Go
+/pkg/
+/go/
+
+# Тестовые файлы
+*.test
+*.out
+
+# Файлы IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Файлы окружения
+.env*
+!.env.example
+
+# Системные файлы
+.DS_Store
+Thumbs.db
+
+# Логи
+*.log
+logs/
+
+# Автогенерируемые файлы
+debug/
+coverage.txt
+profile.out
